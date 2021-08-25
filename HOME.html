@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALICIA LIOU</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100vh;
+            font-family: "Monument Extended", sans-serif;
+            overflow: hidden;
+            background: #EAE6DD
+        }
+
+        /* nav  */
+
+        nav {
+            width: 80%;
+            height: 100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: center;
+            text-transform: uppercase;
+        }
+
+        .menu-area li {
+            display: inline-block;
+            padding-right: 20px;
+        }
+
+        .menu-area li a {
+            text-decoration: none;
+            color: #161616;
+        }
+
+        .menu-area a:hover {
+            text-decoration: wavy underline;
+        }
+
+        .menu {
+            display: flex;
+        }
+
+
+        .menu-item {
+            flex: 1;
+        }
+
+        .menu-left {
+            text-align: left;
+        }
+
+        .menu-center {
+            position: relative;
+        }
+
+
+        .menu-center .img {
+            position: absolute;
+            margin: auto
+        }
+
+
+        .menu-right {
+            text-align: right;
+        }
+
+        .menu-link {
+            padding: 0 30px;
+        }
+
+
+        @media(max-width:768px) {
+            .menu-area {
+                padding: 0;
+                margin: 0;
+            }
+
+            .menu-right a {
+                font-size: 15px;
+            }
+
+            .menu {
+                padding-top: 30px;
+            }
+        }
+
+        @media(max-width:500px) {
+            .menu {
+                padding-top: 50px;
+            }
+        }
+
+
+        /* wrapper img  */
+
+        .wrapper-img {
+            overflow: hidden;
+            position: relative;
+            top: 50% !important;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            width: 30%;
+            height: 90vh;
+        }
+
+        @media(max-width:768px) {
+            .wrapper-img {
+                padding-top: 50px;
+            }
+        }
+
+
+        @media(max-width:500px) {
+            .wrapper-img {
+                padding-top: 50px;
+            }
+        }
+
+
+        .box {
+            background: #EAE6DD;
+            opacity: 1;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            z-index: 2;
+        }
+
+        /* header  */
+
+        .header {
+            position: absolute;
+            top: 60%;
+            left: 28%;
+            transform: translate(-50%, -50%);
+        }
+
+        .header h1 {
+            font-size: 90px;
+            text-transform: uppercase;
+            margin: 0;
+            mix-blend-mode: overlay;
+            color: black
+        }
+
+        .header-1 .letter {
+            display: inline-block;
+            line-height: 1em;
+        }
+
+        .header-2 .letter {
+            display: inline-block;
+            line-height: 1em;
+        }
+
+        @media(max-width:768px) {
+            .header h1 {
+                font-size: 60px;
+            }
+        }
+
+        @media(max-width:500px) {
+            .header h1 {
+                font-size: 40px;
+            }
+        }
+
+
+
+
+        /* side-container */
+
+        .sidebar-text {
+            position: absolute;
+            top: 80%;
+            left: 28%;
+            transform: translate(-50%, -50%);
+            font-size: 40px;
+            color: transparent;
+            -webkit-text-stroke: 1px rgb(165, 165, 165);
+        }
+
+        @media (max-width: 768px) {
+            .sidebar-text {
+                font-size: 36PX;
+                -webkit-text-stroke: 1px rgb(165, 165, 165);
+                top: 70%;
+                left: 38%;
+            }
+        }
+
+
+        @media (max-width: 500px) {
+            .sidebar-text {
+                font-size: 30px;
+                top: 65%;
+                left: 40%;
+            }
+        }
+
+        .projects {
+            position: absolute;
+            bottom: 10%;
+            left: 15%;
+            transform: translate(-50%, -50%);
+            text-transform: uppercase;
+            text-decoration: underline;
+        }
+
+        .img-nav {
+            position: absolute;
+            right: 13%;
+            bottom: 13%;
+            transform: translate(-50%, -50%);
+            text-transform: uppercase;
+            color: grey;
+        }
+
+        .next {
+            position: relative;
+            top: 40px;
+            left: 80px;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .brand-logo {
+            height: 80px;
+            width: 80px;
+            justify-content: center;
+        }
+
+        /* loader  */
+
+        .wrapper {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: #EAE6DD;
+            z-index: 2;
+        }
+
+        .wrapper-img {
+            justify-content: center;
+        }
+
+        .loader {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 8%;
+            height: 20vh;
+            background: #88e7ff;
+            z-index: 2;
+        }
+
+        /* media queries  */
+
+        @media (max-width: 768px) {
+            .wrapper-img {
+                width: 70%;
+            }
+
+            .header {
+                top: 50%;
+                left: 50%;
+                text-align: center;
+            }
+
+            .projects,
+            .img-nav {
+                display: none;
+            }
+        }
+
+
+        @media (max-width: 500px) {
+            .wrapper-img {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- loader  -->
+    <div class="wrapper">
+        <div class="loader"></div>
+    </div>
+    <div class="container">
+        <!-- nav  -->
+        <nav class="menu">
+            <div class="menu-left menu-item"></div>
+            <div class="menu-center">
+                <div class="brand-logo">
+                    <a href="#"><img src="https://i.ibb.co/ByJrGCL/alicialiou.png" alt="alicialiou">
+                </div>
+            </div>
+            <div class="menu-right menu-item">
+                <ul class="menu-area">
+                    <li><a href="./HOME.html">Home</a></li>
+                    <li><a href="./WORK.html">Work</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+
+            </div>
+        </nav>
+
+        <!-- Wrapper image  -->
+        <div class="wrapper-img">
+            <div class="box"></div>
+            <div>
+                <a href="#"></a><img class="image"
+                    src="https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2755&q=80">
+            </div>
+        </div>
+
+        <!-- header  -->
+        <div class="header">
+            <h1 class="header-1">Alicia</h1>
+            <h1 class="header-2">Liou</h1>
+        </div>
+
+        <!-- side-container  -->
+        <div class="hero-container">
+            <div class="sidebar-text">Marketer & Designer</div>
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>
+        var textWrapper = document.querySelector('.header-1');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline()
+            .add({
+                targets: '.header-1 .letter',
+                translateY: [200, 0],
+                translateZ: 0,
+                opacity: [0, 1],
+                easing: "easeOutExpo",
+                duration: 2000,
+                delay: (el, i) => 4800 + 50 * i
+            });
+
+        var textWrapper = document.querySelector('.header-2');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline()
+            .add({
+                targets: '.header-2 .letter',
+                translateY: [200, 0],
+                translateZ: 0,
+                opacity: [0, 1],
+                easing: "easeOutExpo",
+                duration: 2000,
+                delay: (el, i) => 4800 + 50 * i
+            });
+
+        TweenMax.to(".wrapper", 2, {
+            top: "-100%",
+            ease: Expo.easeInOut,
+            delay: 3.6
+        });
+
+        var tl = new TimelineMax();
+
+        tl.from(".loader", 1.6, {
+            scaleY: "0%",
+            y: 80,
+            ease: Expo.easeInOut,
+            delay: 1,
+            transformOrigin: "50% 100%"
+        });
+
+        tl.to(".loader", 1.6, {
+            height: "20vh",
+            scaleY: "0%",
+            ease: Expo.easeInOut,
+            transformOrigin: "0% -100%"
+        });
+
+        TweenMax.to(".box", 2.4, {
+            y: "-100%",
+            ease: Expo.easeInOut,
+            delay: 3.8,
+        });
+
+        var tl = new TweenMax.staggerFrom(".menu > div", 2, {
+            opacity: 0,
+            y: 30,
+            ease: Expo.easeInOut,
+            delay: 4.2
+        }, 0.1);
+
+        var tl = new TweenMax.staggerFrom(".hero-container > div", 2, {
+            opacity: 0,
+            y: 30,
+            ease: Expo.easeInOut,
+            delay: 4.2
+        }, 0.1);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ALICIA LIOU</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cormorant:wght@300&family=Prata&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Abril Fatface', cursive;
+        }
+
+        html,
+        body {
+            background: #1a1810;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .column {
+            width: 50%;
+            height: 100vh;
+        }
+
+        .left {
+            position: relative;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background: url("https://images.unsplash.com/photo-1621940092210-2f459c4de8c3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80") no-repeat 50% 50%;
+            background-size: cover;
+            padding: 20px;
+        }
+
+        .right {
+            display: flex;
+            padding: 120px 0;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .img {
+            width: 160px;
+            height: 200px;
+            margin: 6px;
+        }
+
+        .img-1 {
+            background: url("https://images.unsplash.com/photo-1621939777413-6ccee0a18c38?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=668&q=80") no-repeat 50% 50%;
+            background-size: cover;
+        }
+
+        .img-2 {
+            background: url("https://images.unsplash.com/photo-1621939836057-53dd7998f1d9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=668&q=80") no-repeat 50% 50%;
+            background-size: cover;
+        }
+
+        .img-3 {
+            background: url("https://images.unsplash.com/photo-1621939966598-64ff8f12349d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80") no-repeat 50% 50%;
+            background-size: cover;
+        }
+
+        .img-4 {
+            background: url("https://images.unsplash.com/photo-1621939988954-78fa956988aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=676&q=80") no-repeat 50% 50%;
+            background-size: cover;
+        }
+
+        .header {
+            color: #a77a3f;
+            text-transform: uppercase;
+            font-size: 40px;
+        }
+
+        .header h1 {
+            position: relative;
+        }
+
+        .ml12 .letter {
+            display: inline-block;
+            line-height: 1em;
+            font-weight: lighter;
+        }
+
+        .link {
+            padding-bottom: 30px;
+        }
+
+        .link a {
+            color: rgb(255, 255, 255);
+            text-transform: uppercase;
+            font-size: 40px;
+            font-family: "Neutral Face";
+        }
+
+        .credit {
+            font-family: Termina, sans-serif;
+            position: fixed;
+            bottom: 1rem;
+            right: 1rem;
+            color: #fff
+        }
+
+        .credit a {
+            text-decoration: none;
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        @media (min-width: 900px) {
+            .container {
+                display: flex;
+            }
+
+            .images {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 900px) {
+            .column {
+                width: 100%;
+            }
+
+            .img {
+                width: 400px;
+                height: 400px;
+            }
+
+            .header {
+                font-size: 20px;
+                padding: 80px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left column">
+            <div class="header">
+                <p>sheer magic /</p>
+                <p>
+                    everyday bra top feels like out-of-this-world comfort.
+                </p>
+                <p>100% Cotton</p>
+            </div>
+            <div class="link"><a href="#">all products</a></div>
+        </div>
+        <div class="right column">
+            <div class="images">
+                <div class="img-1 img"></div>
+                <div class="img-2 img"></div>
+                <div class="img-3 img"></div>
+                <div class="img-4 img"></div>
+            </div>
+            <div class="header">
+                <h1 class="ml12">HUMANLIFE</h1>
+            </div>
+        </div>
+
+        <div class="credit"><a href="./WORK.html" target="_blank">© Designed by Alicia Liou</div>
+    </div>
+    <script>
+        // Wrap every letter in a span
+        var textWrapper = document.querySelector(".ml12");
+        textWrapper.innerHTML = textWrapper.textContent.replace(
+            /\S/g,
+            "<span class='letter'>$&</span>"
+        );
+
+        anime.timeline().add({
+            targets: ".ml12 .letter",
+            translateY: [100, 0],
+            translateZ: 0,
+            opacity: [0, 1],
+            easing: "easeOutExpo",
+            duration: 1000,
+            delay: (el, i) => 1000 + 60 * i,
+        });
+
+        TweenMax.from(".left", 3, {
+            left: "-50%",
+            ease: Expo.easeInOut,
+            delay: 2,
+        });
+        TweenMax.from(".header h1", 3, {
+            left: "-140%",
+            ease: Expo.easeInOut,
+            delay: 3,
+        });
+        TweenMax.staggerFrom(
+            ".images > div",
+            1,
+            {
+                y: "60",
+                opacity: 0,
+                ease: Power2.easeOut,
+                delay: 6,
+            },
+            0.2
+        );
+
+        TweenMax.staggerFrom(
+            ".header > p",
+            1,
+            {
+                y: "60",
+                opacity: 0,
+                ease: Power2.easeOut,
+                delay: 5.6,
+            },
+            0.2
+        );
+
+        TweenMax.from(".link", 1, {
+            opacity: 0,
+            ease: SteppedEase.config(1),
+            repeat: -1,
+            repeatDelay: 0.2,
+            delay: 7.8,
+        });
+    </script>
+</body>
+
+</html>

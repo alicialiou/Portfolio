@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALICIA LIOU</title>
+    <link rel="stylesheet" href="./fontawesome-free-5.15.3-web/css/all.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7c47ed6ead.js" crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            font-family: 'Noto Serif JP', serif;
+
+        }
+
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 1080px;
+            margin: 0 auto;
+
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .navbar {
+            display: flex;
+            position: fixed;
+            background-color: #f5f5f5;
+            width: 100%;
+            height: 70px;
+            margin-top: 0;
+            padding-top: 30px;
+            justify-content: center;
+        }
+
+        .navbar li {
+            display: inline-block;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navbar-left,
+        .logo,
+        .navbar-right {
+            width: 360px;
+        }
+
+        .navbar-left>a {
+            margin-right: 30px;
+            font-size: 18px;
+        }
+
+        .navbar-left a:hover {
+            color: darkgray;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            padding: 0 100px;
+            justify-content: center;
+
+        }
+
+        .img-logo>img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            justify-content: center;
+
+        }
+
+        /* 
+        .logo {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        } */
+
+        .navbar-right {
+            display: flex;
+            justify-content: flex-end;
+            gap: 55px;
+        }
+
+        .navbar-right>a {
+            font-size: 1.2rem;
+            color: black;
+            display: block;
+        }
+
+        .navbar-right a:hover {
+            color: darkgray;
+        }
+
+
+
+        .section-title {
+            padding-top: 40px;
+        }
+
+        /* 
+        .buy-link {
+            background-color: #777;
+
+            padding: 20px;
+            color: #fff;
+
+        } */
+
+        .product-area {
+            /* position: relative; */
+            justify-content: space-between;
+            padding-top: 100px;
+        }
+
+        /* .item {
+            position: absolute;
+        } */
+
+        .img-300 {
+            width: 350px;
+            height: 350px;
+            padding-right: 15px;
+            /* -webkit-transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            -ms-transition: all 1s ease;
+            transition: all 1s ease; */
+
+        }
+
+        .img-300>img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* 
+
+        .img-300:hover {
+            padding: 30px;
+            width: 300px;
+            height: 300px;
+        } */
+
+        .subtitle {
+            width: 900px;
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 50px;
+            color: gray;
+        }
+
+        .subtitle>span {
+            width: 300px;
+        }
+
+        .demo {
+            margin-top: 40px;
+            justify-content: space-between;
+
+        }
+
+        .img-55 {
+            width: 500px;
+            height: 500px;
+        }
+
+        .img-55>img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover
+        }
+
+        .order-1 {
+            order: 1;
+        }
+
+        .order-2 {
+            order: 2;
+        }
+
+
+        .justify-contnet-center {
+            justify-content: center;
+        }
+
+        .photo {
+            margin-top: 40px;
+        }
+
+        .img-70 {
+            width: 756px;
+        }
+
+        .img-30 {
+            width: 324px;
+        }
+
+        .img-70>img,
+        .img-30>img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+
+
+        .mt-40 {
+            margin-top: 40px;
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        .row-viewbook {
+            width: 900px;
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 30px;
+            color: gray;
+        }
+
+        /* .row-bottom {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+            gap: 24px;
+        } */
+
+        .bottom-subtitle {
+            width: 100%;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            justify-content: center;
+
+        }
+
+        /* 
+        .navbar-bottom {
+            display: flex;
+            gap: 55px;
+        }
+
+        .navbar-bottom>i {
+            font-size: 1.6rem;
+        }
+
+        .mobile-btn {
+            display: none;
+        } */
+
+        .text {
+            text-align: center;
+        }
+
+
+
+        footer {
+            width: 100%;
+            height: 90px;
+            background-color: #f5f5f5;
+            display: flex;
+            margin-top: 30px;
+            margin-bottom: 0px;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .mt-40 {
+            padding-bottom: 20px;
+        }
+
+
+        @media screen and (max-width:500px) {
+            /* .main-container {
+                display: none;
+            } */
+
+            * {
+                font-size: 10px;
+                /* font-family: 'Open Sans', sans-serif; */
+            }
+
+            .html,
+            .body {
+                margin: 0;
+                pad: 0;
+            }
+
+            .main-container {
+                width: 500px;
+            }
+
+            .container {
+                width: 100%;
+            }
+
+            .navbar {
+                display: flex;
+            }
+
+
+            .navbar-left>a {
+                display: inline-block;
+                font-size: 12px;
+                margin: 0 auto;
+                padding-left: 10px;
+                gap: 1%;
+            }
+
+            .navbar-left a:hover {
+                color: darkgray;
+
+            }
+
+            .logo {
+                height: 30px;
+                width: 30px;
+                padding: 0 30px;
+            }
+
+            .navbar-right>a {
+                display: inline-block;
+                margin: 0 10px;
+            }
+
+            .navbar-right {
+                display: inline-block;
+                justify-content: flex-end;
+                /* gap: 5px; */
+            }
+
+
+
+            .img-300 {
+                width: 155px;
+                height: 150px;
+            }
+
+            .section-title {
+                align-items: center;
+            }
+
+            .subtitle {
+                width: 500px;
+                margin: 0;
+                /* display: flex; */
+                /* justify-content: center; */
+                text-align: center;
+                font-size: 10px;
+                color: gray;
+                margin-top: 20px
+            }
+
+
+            .img-55 {
+                width: 250px;
+                height: 250px;
+            }
+
+
+            .img-55>img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover
+            }
+
+
+
+            .img-70 {
+                width: 350px;
+            }
+
+            .img-30 {
+                width: 150px;
+            }
+
+            .img-70>img,
+            .img-30>img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .photo {
+                position: absolute;
+
+            }
+
+            .row-viewbook {
+                display: none;
+            }
+
+            .demo {
+                margin-top: 20px;
+                justify-content: space-between;
+
+            }
+
+            .row-viewbook,
+            .row-bottom,
+            .bottom-subtitle,
+            .footer {
+                margin-top: 20px;
+
+            }
+
+            p {
+                font-size: 10px;
+            }
+
+
+            .photo {
+                margin-top: 20px;
+            }
+
+            /* .bottom-subtitle {
+                display: none;
+            } */
+
+            .bottom-subtitle {
+                display: none;
+            }
+
+
+
+        }
+
+
+        @media screen and (max-width:768px) {
+
+            * {
+                font-size: 14px;
+            }
+
+            .navbar {
+                width: 100%;
+            }
+
+            footer {
+                /* width: 100%; */
+                /* height: 30px; */
+                background-color: transparent;
+                padding: 40px auto;
+
+            }
+
+            .bottom-subtitle {
+                height: 60px;
+                /* margin-top: 30px; */
+                background-color: transparent;
+                position: absolute;
+                padding-left: 320px;
+                /* display: none; */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="navbar">
+            <div class="navbar-left">
+                <a href="#">Products</a>
+                <a href="#">Room</a>
+                <a href="#">Lookbook</a>
+                <!-- <i class="fas fa-search"></i> -->
+                <!-- <a href="#">Contact</a> -->
+            </div>
+
+            <div class="navbar-center">
+                <div class="logo">
+                    <div class="img-logo"><img src="https://i.ibb.co/n7ZVzZX/PLUM-Square-Logo.png"
+                            alt="PLUM-Square-Logo">
+                    </div>
+                </div>
+                <!-- <div class="search-box">
+                    <form>
+                        <input type="search" placeholder="Search">
+                    </form>
+                </div> -->
+            </div>
+
+            <div class="navbar-right">
+                <a href="#"><i class="fas fa-truck"></i></a>
+                <a href="#"><i class="fas fa-user"></i></a>
+                <a href="#"><i class="fas fa-heart"></i></a>
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <main class="container">
+        <section class="row section-title">
+            <!-- <a href="" class="New-In">New In</a> -->
+            <!-- <a href="" class="buy-link">Shop Now</a> -->
+
+        </section>
+
+
+        <section class="row product-area">
+            <div class=items>
+                <div class="img-300">
+                    <img src="https://images.unsplash.com/photo-1600421684846-e7ebc943403b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=666&q=80"
+                        alt="product1">
+                </div>
+                <div class="text">
+                    <p>Table lamp</p>
+                    <p>$55.99</p>
+                </div>
+
+            </div>
+            <div class=items>
+                <div class="img-300">
+                    <img src="https://images.unsplash.com/photo-1616628075618-6d2b328f8248?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80"
+                        alt="product2">
+                </div>
+                <div class="text">
+                    <p>Table lamp</p>
+                    <p>$35.99</p>
+                </div>
+            </div>
+            <div class=items>
+                <div class="img-300">
+                    <img src="https://images.unsplash.com/photo-1600421719060-f18eba3cba4d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=666&q=80X"
+                        alt="product3">
+                </div>
+                <div class="text">
+                    <p>LED light</p>
+                    <p>$50.99</p>
+                </div>
+            </div>
+            <div class="paragraph"></div>
+        </section>
+
+
+        <section class=subtitle>
+            <span>Made with love in Los Angeles from all natural eco-friendly materials. </span>
+        </section>
+        <section class="row demo">
+            <div class="demo-info order-2">
+                <div class="img-55">
+                    <img src="https://images.unsplash.com/photo-1567016420071-ec27a7835119?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80"
+                        alt="product4">
+                </div>
+                <div class="text">
+                    <p>Khaki Sofa</p>
+                    <p>$155.99</p>
+                </div>
+
+
+            </div>
+            <div class="demo-model order-1">
+                <div class="img-55">
+                    <img src="https://images.unsplash.com/photo-1567016507665-356928ac6679?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+                        alt="model1">
+                </div>
+                <div class="text">
+                    <p>Green sofa</p>
+                    <p>$235.99</p>
+                </div>
+            </div>
+        </section>
+        <section class="row demo">
+            <div class="demo-info ">
+                <div class="img-55">
+                    <img src="https://images.unsplash.com/photo-1567016557389-5246a1940bdc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80"
+                        alt="product4">
+                </div>
+                <div class="text">
+                    <p>Beige Sofa</p>
+                    <p>$150.99</p>
+                </div>
+
+            </div>
+            <div class="demo-model">
+                <div class="img-55">
+                    <img src="https://images.unsplash.com/photo-1567016432779-094069958ea5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80"
+                        alt="model1">
+                </div>
+                <div class="text">
+                    <p>Orange Sofa</p>
+                    <p>$180.00</p>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="row-viewbook">
+            <a href="#" class="text-gray">View Lookbook</a>
+        </div>
+
+        <section class="row photo">
+            <div class="img-70">
+                <img src="https://images.unsplash.com/photo-1567016546367-c27a0d56712e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1500&q=80"
+                    alt="">
+            </div>
+            <div class="img-30">
+                <img src="https://images.unsplash.com/photo-1567790295703-33352a194351?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+                    alt="">
+            </div>
+
+            <div class="bottom-container">
+                <!-- <section class="row-bottom">
+                <div class="navbar-bottom">
+                    <i class="fa fa-thumbs-o-up"></i>
+                    <i class="fa fa-camera-retro"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+
+            </section> -->
+
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="mt-40">
+            <!-- <label for="email"></label>
+            <input type="email" id="email" placeholder="Email Address">
+            <button class=signup>Sign Up</button> -->
+        </div>
+
+        <section class="bottom-subtitle">
+            <a href="./WORK.html"><span>© Designed by Alicia Liou</span></a>
+        </section>
+
+    </footer>
+
+
+</body>
+
+
+</html>
