@@ -312,14 +312,6 @@
             font-size: 22px;
         }
 
-        .vertical {
-            margin-top: 40px;
-            border-left: 1px solid #fff;
-            height: 80px;
-            position: absolute;
-            left: 50%;
-        }
-
         .row {
             display: flex;
         }
@@ -329,61 +321,65 @@
             padding-top: 60px;
         }
 
-        .img-1,
-        .img-2,
-        .img-3,
-        .img-4,
-        .img-5,
-        .img-6 {
-            width: 500px;
+        .img-1 img {
             height: 500px;
-            padding: 0;
-            margin: 0;
+            width: 500px;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 50px;
         }
 
-        .text-1,
-        .text-2,
-        .text-3,
-        .text-4,
-        .text-5,
-        .text-6 {
+        .text-1 {
             text-align: center;
-            padding-top: 30px;
+            font-family: 'Tenor Sans', sans-serif;
+            font-size: 20px;
+            padding: 50px;
         }
 
-        @media(max-width: 500px) {
-            h6 {
-                font-size: 20px;
-            }
-
-            .img-1,
-            .img-2,
-            .img-3,
-            .img-4,
-            .img-5,
-            .img-6 {
-                width: 345px;
-                height: 345px;
-                padding: 0;
-                margin: 0;
-                justify-content: center;
-            }
-
-
-            .text-1,
-            .text-2,
-            .text-3,
-            .text-4,
-            .text-5,
-            .text-6 {
-                text-align: center;
-                padding: 30px;
-            }
-
-            .demo {
-                padding: 0;
-            }
+        .text-1 a {
+            text-decoration: none;
+            color: #747474;
         }
+
+        .text-1 a:hover {
+            text-decoration: wavy underline;
+
+        }
+
+        .button {
+            background-color: transparent;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 20px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+
+        .button1 {
+            background-color: transparent;
+            color: black;
+            border: 2px solid #747474;
+        }
+
+        .button1:hover {
+            background-color: #747474;
+            color: white;
+        }
+
+        .vertical {
+            margin-top: 30px;
+            border-left: 1px solid #fff;
+            height: 80px;
+            position: absolute;
+            left: 50%;
+        }
+
+
 
 
 
@@ -420,48 +416,7 @@
             padding-left: 20px;
         }
 
-        #fb::before {
-            display: inline-block;
-            content: '';
-            border-radius: 100%;
-            height: 4px;
-            width: 4px;
-            margin-right: 6px;
-            background: #3b5998;
-        }
 
-
-        #ig::before {
-            display: inline-block;
-            content: '';
-            border-radius: 100%;
-            height: 4px;
-            width: 4px;
-            margin-right: 6px;
-            background: #fcaf45;
-        }
-
-
-        #tw::before {
-            display: inline-block;
-            content: '';
-            border-radius: 100%;
-            height: 4px;
-            width: 4px;
-            margin-right: 6px;
-            background: #55acee;
-        }
-
-
-        #yt::before {
-            display: inline-block;
-            content: '';
-            border-radius: 100%;
-            height: 4px;
-            width: 4px;
-            margin-right: 6px;
-            background: #c4302b;
-        }
 
         #media,
         #address {
@@ -571,7 +526,7 @@
         <!--------------- hero section starts here --------------->
         <div class="hero">
             <div class="header">
-                <h1 class="line anim-typewriter">I do marketing but also love web design.</h1>
+                <h1 class="line anim-typewriter">Alicia studies Management & Digital Marketing.</h1>
             </div>
         </div>
 
@@ -583,75 +538,49 @@
         <div class="container-fluid">
             <br><br><br>
 
-            <h6>Selected projects</h6>
+            <h6>About Me</h6>
 
             <div class="vertical"></div>
             <br>
 
             <div class="whitespace"></div>
-            <div class="whitespace"></div>
-
-            <div class="row">
-                <div class="col-lg-8"></div>
-
-                <div class="col-lg-4 project project1 wow fadeInUp" onclick="location.href='project.html'"></div>
-            </div>
-
-            <div class="whitespace"></div>
 
 
             <div class="container">
-                <div class="row demo">
-                    <div class="work-1">
-                        <div class="img-1">
-                            <a href="./PLUM.html"><img src="https://i.ibb.co/sJCNtB4/PLUM-Landing-Logo.jpg" alt=""></a>
+
+                <div class="work-1">
+
+                    <div class="text-1">
+                        <div class="img-1"><img src="https://i.ibb.co/bNvZYkg/Processed-with-VSCO-with-a9-preset.jpg">
                         </div>
-                        <div class="text-1">
-                            PLUM Furniture Landing Page // Web Design & Web Development
-                        </div>
+                        Hey! I am Alicia! <br>
+
+                        I do marketing but also love web design. <br>
+                        I am currently pursuing a master's degree in Management with a concentration in Digital
+                        Marketing and Analytics at George Washington University. As a self taugter, I learned web design
+                        and web development outside classroom. I am passionate about bridging the junction between
+                        marketing, design, and consumer behavior. In my spare time, I enjoy swimming, catching
+                        sunsets with my lens, and exploring
+                        new restaurants and cafes.<br>You can reach me on <a
+                            href="https://www.linkedin.com/in/alicia-liou-88507117a/">LinkedIn</a> or
+                        via <a href="mailto:alicialiou@gwu.edu">alicialiou@gwu.edu</a>.<br>
+                        <button class="button button1"><a
+                                href="https://docs.google.com/document/d/1RctsaErwkpsRWARWKQ3TwvlaCEpOsbBw/edit?usp=sharing&ouid=108360688174096598787&rtpof=true&sd=true">View
+                                Resume</a></button>
                     </div>
 
-
-                    <div class="work-2">
-                        <div class="img-2">
-                            <a href="./HUMANLIFE.html"><img src="https://i.ibb.co/wNMRpH8/HUMANLIFE.png" alt=""></a>
-                        </div>
-                        <div class="text-2">
-                            HUMANLIFE Intimates Landing Page // Web Design & Web Development
-                        </div>
-
-                    </div>
                 </div>
 
-                <div class="row demo">
-                    <div class="work-3">
-                        <div class="img-3">
-                            <a
-                                href="https://drive.google.com/file/d/1uQ_nqAhURUvdyBbFfIjONndVinWuAZ1I/view?usp=sharing"><img
-                                    src="https://i.ibb.co/JvDWsns/Beauty-Molly.jpg" alt=""></a>
-                        </div>
-                        <div class="text-3">
-                            BEAUTY Magazine // Editorial Design & Writer
-                        </div>
-                    </div>
-
-
-                    <div class="work-4">
-                        <div class="img-4">
-                            <a href="./PHOTOGRAPHY.html"><img
-                                    src="https://i.ibb.co/hXyKZ9X/Processed-with-VSCO-with-4-preset.jpg" alt=""></a>
-                        </div>
-                        <div class="text-4">
-                            Photography Portfolio // Web Development by w3schools
-                        </div>
-
-                    </div>
-                </div>
 
 
 
             </div>
+            <div class="whitespace"></div>
+
+
+
         </div>
+    </div>
 
 
     </div>
@@ -671,7 +600,7 @@
             <div class="info">
                 <div class="row">
                     <div class="col-lg-4" id="personal">
-                        <a href="mailto:alicialiou@gwu.edu">Let’s grab coffee together! </a>
+                        <a href="https://www.linkedin.com/in/alicia-liou-88507117a/">Reach me on LinkedIn! </a>
 
                         <br><br>
                     </div>
@@ -681,7 +610,7 @@
                     </div>
 
                     <div class="col-lg-4" id="address">
-                        <a href="mailto:alicialiou11@gmail.com">Contact ME!</a>
+                        <a href="mailto:alicialiou@gwu.edu">Contact ME!</a>
                         <h4>© Designed by Alicia Liou</h4>
                         <br><br>
                     </div>
